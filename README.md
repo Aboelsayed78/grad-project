@@ -1,4 +1,4 @@
-# grad-project
+# crm-sys
 
 ## Project setup
 ```
@@ -23,6 +23,11 @@ npm run test:unit
 ### Lints and fixes files
 ```
 npm run lint
+```
+
+### Launching Vue Gui
+```
+vue ui
 ```
 
 ### Customize configuration
