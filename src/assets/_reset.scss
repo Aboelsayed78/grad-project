@@ -1,0 +1,46 @@
+/* Color Variables */
+$main-color: #42b983;
+$second-color: #35495e;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.clear {
+  clear: both;
+}
+
+ul {
+  list-style: none;
+}
+
+.contain {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(58, 58, 58, 0.5);
+}
+
+.seprator {
+  position: relative;
+  hr {
+    height: 4px;
+    color: #999;
+    margin: 25px 100px;
+  }
+  img {
+    width: 30px;
+    top: -13px;
+    background-color: #fff;
+    position: absolute;
+  }
+}

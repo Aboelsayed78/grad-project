@@ -1,4 +1,4 @@
-# crm-sys
+# grad-project
 
 ## Project setup
 ```
