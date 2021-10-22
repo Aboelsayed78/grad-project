@@ -35,8 +35,13 @@ export default {
   margin: 15px 2.5%;
   width: 95%;
   border-radius: 40px;
-  background-color: rgba(140, 140, 140, 0.4);
+  background-color: $trans-color;
   z-index: 1;
+  border: 2px solid transparent;
+  transition: all 0.25s ease-in-out;
+  &:hover{
+    border: 2px solid $main-color;
+  }
   .contain {
     .logo {
       float: left;

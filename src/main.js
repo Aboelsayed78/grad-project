@@ -17,6 +17,8 @@ import {
   faColumns,
   faThumbsUp,
   faThumbsDown,
+  faMapMarkerAlt,
+  faAngleDoubleDown,
 } from "@fortawesome/free-solid-svg-icons";
 import {
   faFacebookF,
@@ -40,7 +42,9 @@ library.add(
   faPlaneDeparture,
   faColumns,
   faThumbsUp,
-  faThumbsDown
+  faThumbsDown,
+  faMapMarkerAlt,
+  faAngleDoubleDown,
 );
 
 Vue.component("font-awesome-icon", FontAwesomeIcon);

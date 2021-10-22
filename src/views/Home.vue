@@ -133,13 +133,13 @@ export default {
       .feat {
         float: left;
         width: 28%;
-        padding: 1px;
         background-color: #f5f5f5;
         border-radius: 5px;
         transition: all 0.25s ease-in-out;
         box-shadow: 2px 2px 5px 0 #ccc;
+        border: 2px solid transparent;
         &:hover {
-          background-color: #eee;
+          border: 2px solid $main-color;
           svg,
           img {
             opacity: 1;
@@ -158,7 +158,7 @@ export default {
           height: 150px;
           width: 100%;
           opacity: 0.8;
-          border-radius: 5px 5px 0 0;
+          border-radius: 3px 3px 0 0;
           transition: all 0.25s ease-in-out;
         }
         p {

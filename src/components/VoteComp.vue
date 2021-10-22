@@ -57,8 +57,9 @@ export default {
   border-radius: 5px;
   transition: all 0.25s ease-in-out;
   box-shadow: 1px 1px 5px 0 #ccc;
+  border: 2px solid transparent;
   &:hover {
-    background-color: #eee;
+    border: 2px solid $main-color;
     .vote-cover img {
       opacity: 1;
       color: $main-color;
