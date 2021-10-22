@@ -1,23 +1,18 @@
 <template>
   <div class="home">
-    <div class="head">
-      <div class="overlay">
-        <HelloWorld msg="Welcome To Your Home Page" />
-      </div>
-    </div>
     <div class="features">
       <div class="contain">
         <div class="feat">
-          <img src="../assets/header-2.jpg" alt="" />
+          <font-awesome-icon icon="vote-yea" />
           <p><span>vote</span> for your favorite trip</p>
         </div>
         <div class="feat">
-          <img src="../assets/header-3.jpg" alt="" />
+          <font-awesome-icon icon="plane-departure" />
           <p><span>search</span> for your desired trip</p>
         </div>
         <div class="feat">
-          <img src="../assets/header-4.jpg" alt="" />
-          <p><span>compare</span> between many traveling agencies</p>
+          <font-awesome-icon icon="columns" />
+          <p><span>compare</span> between traveling agencies</p>
         </div>
       </div>
       <div class="clear"></div>
@@ -112,7 +107,7 @@
         </div>
         <div class="feat">
           <img src="../assets/header-4.jpg" alt="" />
-          <p><span>compare</span> between many traveling agencies</p>
+          <p><span>compare</span> between traveling agencies</p>
         </div>
       </div>
       <div class="clear"></div>
@@ -121,27 +116,14 @@
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
-
 export default {
   name: "Home",
-  components: {
-    HelloWorld,
-  },
 };
 </script>
 
 <style lang="scss" scoped>
 @import "../assets/_reset.scss";
 .home {
-  .head {
-    margin-bottom: 50px;
-    position: relative;
-    height: 635px;
-    background-image: url(../assets/header-5.jpg);
-    background-size: cover;
-  }
   .features {
     margin-bottom: 50px;
     padding: 25px 0;
@@ -154,12 +136,23 @@ export default {
         padding: 1px;
         background-color: #f5f5f5;
         border-radius: 5px;
-        box-shadow: 2px 2px 5px 0 #ddd;
+        transition: all 0.25s ease-in-out;
+        box-shadow: 2px 2px 5px 0 #ccc;
         &:hover {
-          box-shadow: 2px 2px 5px 0 #ccc;
+          background-color: #eee;
+          svg,
           img {
             opacity: 1;
+            color: $main-color;
           }
+        }
+        svg {
+          font-size: 80px;
+          display: block;
+          margin: 35px auto;
+          opacity: 0.8;
+          color: $second-color;
+          transition: all 0.25s ease-in-out;
         }
         img {
           height: 150px;
@@ -176,6 +169,7 @@ export default {
           text-transform: capitalize;
           font-weight: bold;
           color: #666;
+          text-align: center;
           span {
             color: $main-color;
           }

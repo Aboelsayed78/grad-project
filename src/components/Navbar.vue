@@ -83,6 +83,7 @@ export default {
         text-transform: capitalize;
         padding: 3px;
         cursor: pointer;
+        text-align: center;
       }
     }
   }

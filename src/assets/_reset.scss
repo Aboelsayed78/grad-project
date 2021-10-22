@@ -21,6 +21,22 @@ ul {
   margin: 0 auto;
 }
 
+// /* Extra small devices (phones, 600px and down) */
+// @media only screen and (max-width: 600px) {...}
+
+// /* Small devices (portrait tablets and large phones, 600px and up) */
+// @media only screen and (min-width: 600px) {...}
+
+// /* Medium devices (landscape tablets, 768px and up) */
+// @media only screen and (min-width: 768px) {...}
+
+// /* Large devices (laptops/desktops, 992px and up) */
+// @media only screen and (min-width: 992px) {...}
+
+// /* Extra large devices (large laptops and desktops, 1200px and up) */
+// @media only screen and (min-width: 1200px) {...}
+
+/* overlay style */
 .overlay {
   position: absolute;
   top: 0;
@@ -30,12 +46,14 @@ ul {
   background-color: rgba(58, 58, 58, 0.5);
 }
 
+/* sepration style */
 .seprator {
   position: relative;
+  text-align: center;
   hr {
     height: 4px;
     color: #999;
-    margin: 25px 100px;
+    margin: 75px 100px;
   }
   img {
     width: 30px;
@@ -43,4 +61,23 @@ ul {
     background-color: #fff;
     position: absolute;
   }
+}
+
+/* scroll bar style */
+/* width */
+::-webkit-scrollbar {
+  width: 7px;
+  // display: none;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #999;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #777;
 }

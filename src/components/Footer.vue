@@ -36,6 +36,7 @@ export default {
 .footer {
   background-color: $second-color;
   overflow: hidden;
+  text-align: center;
   .contain {
     h3 {
       color: #eee;

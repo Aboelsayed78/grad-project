@@ -1,11 +1,28 @@
 <template>
   <div class="votes">
-    <h1>This is votes page</h1>
+    <div class="contain">
+      <VoteComp />
+      <VoteComp />
+      <VotePage />
+    </div>
   </div>
 </template>
 
 <script>
+import VoteComp from "../components/VoteComp.vue";
+import VotePage from "../components/VotePage.vue";
 export default {
   name: "Votes",
+  components: {
+    VoteComp,
+    VotePage,
+  },
 };
 </script>
+
+<style lang="scss" scoped>
+@import "../assets/_reset.scss";
+.votes {
+  padding: 25px 0;
+}
+</style>

@@ -11,7 +11,13 @@ import "normalize.css";
 import "@fortawesome/fontawesome-free";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
-import {} from "@fortawesome/free-solid-svg-icons";
+import {
+  faVoteYea,
+  faPlaneDeparture,
+  faColumns,
+  faThumbsUp,
+  faThumbsDown,
+} from "@fortawesome/free-solid-svg-icons";
 import {
   faFacebookF,
   faFacebookMessenger,
@@ -29,8 +35,14 @@ library.add(
   faTwitter,
   faInstagram,
   faYoutube,
-  faGooglePlay
+  faGooglePlay,
+  faVoteYea,
+  faPlaneDeparture,
+  faColumns,
+  faThumbsUp,
+  faThumbsDown,
 );
+
 Vue.component("font-awesome-icon", FontAwesomeIcon);
 
 Vue.config.productionTip = false;

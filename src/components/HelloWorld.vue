@@ -20,6 +20,7 @@ export default {
 <style scoped lang="scss">
 .hello {
   margin-top: 275px;
+  text-align: center;
 }
 h1 {
   margin: 0;

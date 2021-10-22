@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <Navbar />
+    <Header />
     <router-view />
     <Footer />
   </div>
@@ -8,11 +9,13 @@
 
 <script>
 import Navbar from "./components/Navbar.vue";
+import Header from "./components/Header.vue";
 import Footer from "./components/Footer.vue";
 export default {
   components: {
     Navbar,
-    Footer,
+    Header,
+    Footer
   },
 };
 </script>
@@ -23,20 +26,6 @@ export default {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: $main-color;
-    }
-  }
+  color: $second-color;
 }
 </style>
