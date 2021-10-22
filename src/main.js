@@ -40,7 +40,7 @@ library.add(
   faPlaneDeparture,
   faColumns,
   faThumbsUp,
-  faThumbsDown,
+  faThumbsDown
 );
 
 Vue.component("font-awesome-icon", FontAwesomeIcon);

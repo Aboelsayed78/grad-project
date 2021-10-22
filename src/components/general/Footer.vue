@@ -32,7 +32,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "../assets/_reset.scss";
+@import "../../assets/_reset.scss";
 .footer {
   background-color: $second-color;
   overflow: hidden;

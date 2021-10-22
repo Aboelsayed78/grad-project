@@ -2,7 +2,7 @@
   <div class="navbar">
     <div class="contain">
       <div class="logo">
-        <img alt="Vue logo" src="../assets/logo.png" />
+        <img alt="Vue logo" src="../../assets/logo.png" />
       </div>
       <div class="nav-tabs">
         <div class="web-tabs">
@@ -28,7 +28,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "../assets/_reset.scss";
+@import "../../assets/_reset.scss";
 .navbar {
   position: absolute;
   padding: 5px 35px;

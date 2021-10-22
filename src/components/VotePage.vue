@@ -222,7 +222,8 @@ export default {
         width: 80%;
         margin: 0 auto 20px auto;
         overflow: hidden;
-        .next, .prev {
+        .next,
+        .prev {
           width: 20%;
           background-color: $main-color;
           text-align: center;
@@ -277,7 +278,8 @@ export default {
               border-radius: 5px;
               cursor: pointer;
               transition: all 0.2s;
-              &.active, &:hover {
+              &.active,
+              &:hover {
                 background-color: $main-color;
                 color: aliceblue;
               }

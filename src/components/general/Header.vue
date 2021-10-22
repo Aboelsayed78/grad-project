@@ -1,28 +1,28 @@
 <template>
   <div class="head">
     <div class="overlay">
-      <HelloWorld msg="Welcome To Your Home Page" />
+      <HeadCont msg="Welcome To Your Home Page" />
     </div>
   </div>
 </template>
 
 <script>
-import HelloWorld from "./HelloWorld.vue";
+import HeadCont from "../HeadCont.vue";
 export default {
   name: "Header",
   components: {
-    HelloWorld,
+    HeadCont,
   },
 };
 </script>
 
 <style lang="scss" scoped>
-@import "../assets/_reset.scss";
+@import "../../assets/_reset.scss";
 .head {
   margin-bottom: 50px;
   position: relative;
   height: 635px;
-  background-image: url(../assets/header-5.jpg);
+  background-image: url(../../assets/header-5.jpg);
   background-size: cover;
 }
 </style>
