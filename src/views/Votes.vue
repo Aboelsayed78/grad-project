@@ -1,8 +1,8 @@
 <template>
   <div class="votes">
     <div class="contain">
-      <VoteComp />
-      <VoteComp />
+      <VoteComp like="86" unlike="23"/>
+      <VoteComp like="62" unlike="33"/>
       <VotePage />
     </div>
   </div>

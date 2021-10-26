@@ -13,26 +13,41 @@ const routes = [
     path: "/",
     name: "Home",
     component: Home,
+    meta: {
+      title: "Home",
+    },
   },
   {
     path: "/votes",
     name: "Votes",
     component: Votes,
+    meta: {
+      title: "Votes",
+    },
   },
   {
     path: "/trips",
     name: "Trips",
     component: Trips,
+    meta: {
+      title: "Trips",
+    },
   },
   {
     path: "/agencies",
     name: "Agencies",
     component: Agencies,
+    meta: {
+      title: "Agencies",
+    },
   },
   {
     path: "/contact",
     name: "Contact",
     component: Contact,
+    meta: {
+      title: "Contact"
+    },
   },
 ];
 
@@ -40,6 +55,11 @@ const router = new VueRouter({
   mode: "history",
   base: process.env.BASE_URL,
   routes,
+});
+
+router.beforeEach((to, from, next) => {
+  document.title = `Grad -> ${to.meta.title}`;
+  next();
 });
 
 export default router;

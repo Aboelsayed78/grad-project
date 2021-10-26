@@ -156,9 +156,6 @@ export default {
     font-size: 50px;
     color: #eeee;
     transition: all 0.25s ease-in-out;
-    &:hover{
-      color: $main-color;
-    }
   }
 }
 </style>

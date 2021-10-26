@@ -47,9 +47,11 @@
         <div class="data-vote">
           <button class="like">
             <font-awesome-icon icon="thumbs-up" />like
+            <span>86</span>
           </button>
           <button class="unlike">
             <font-awesome-icon icon="thumbs-down" />unlike
+            <span>23</span>
           </button>
         </div>
       </div>
@@ -314,18 +316,29 @@ export default {
           border-radius: 5px;
           font-size: 20px;
           text-transform: capitalize;
-          padding: 8px 20px;
+          padding: 8px 15px;
           cursor: pointer;
           color: #fff;
-          width: 150px;
+          width: 175px;
           &.like {
             background-color: #080;
+            span{
+              background-color: #165a16;
+            }
           }
           &.unlike {
             background-color: #f00;
+            span{
+              background-color: #b71010;
+            }
           }
           svg {
-            margin-right: 20px;
+            margin-right: 15px;
+          }
+          span{
+            margin-left: 15px;
+            border-radius: 5px;
+            padding: 3px;
           }
         }
       }

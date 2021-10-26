@@ -7,7 +7,6 @@
       <div class="vote-title">
         <h3>sharm el-sheikh</h3>
         <h4>pyramids for travel</h4>
-        <div class="clear"></div>
       </div>
       <p>
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium
@@ -15,8 +14,12 @@
         perferendis sunt, minima amet...
       </p>
       <div class="vote-stat">
-        <span id="like">50</span>
-        <span id="unlike">25</span>
+        <span class="vote-like">
+          <font-awesome-icon icon="thumbs-up" />{{like}}
+        </span>
+        <span class="vote-unlike">
+          <font-awesome-icon icon="thumbs-down" />{{unlike}}
+        </span>
       </div>
       <button
         onclick="document.getElementById('vote-page').style.display='block'"
@@ -31,18 +34,23 @@
 <script>
 export default {
   name: "VoteComp",
+  props: {
+    like: String,
+    unlike: String,
+  },
   mounted: function voteWidth() {
-    let x = document.getElementById("like"),
-      y = document.getElementById("unlike"),
-      xCont = x.innerText, // "50"
-      yCont = y.innerText, // "25"
-      xInt = parseInt(xCont), // 50
-      yInt = parseInt(yCont), // 25
-      tot = xInt + yInt, // 75
-      xRes = (xInt / tot) * 100, // 66.66666666
-      yRes = (yInt / tot) * 100; // 33.33333333
-    x.style.width = xRes + "%"; // 66.6%
-    y.style.width = yRes + "%"; // 33.3%
+    let voteArr = document.getElementsByClassName("vote-comp");
+    for(let i=0; i<=voteArr.length; i++){
+      let x = document.getElementsByClassName("vote-like")[i],
+        y = document.getElementsByClassName("vote-unlike")[i],
+        xInt = parseInt(x.innerText), // 50
+        yInt = parseInt(y.innerText), // 25
+        tot = xInt + yInt, // 75
+        xCon = ((xInt / tot) * 100), // 66.6666
+        yCon = ((yInt / tot) * 100); // 33.3333
+      x.style.width = xCon + "%"; // 66.6%
+      y.style.width = yCon + "%"; // 33.3%
+    }  
   },
 };
 </script>
@@ -64,6 +72,10 @@ export default {
       opacity: 1;
       color: $main-color;
     }
+    .vote-cont .vote-title h3,
+    .vote-cont .vote-title h4 {
+      border-bottom: 2px solid $main-color;
+    }
   }
   .vote-cover {
     float: left;
@@ -84,12 +96,14 @@ export default {
     .vote-title {
       overflow: hidden;
       margin-top: 10px;
+      display: flex;
+      justify-content: space-between;
       h3,
       h4 {
-        float: left;
         text-align: left;
-        width: 50%;
         text-transform: capitalize;
+        border-bottom: 2px solid transparent;
+        transition: all 0.25s ease-in-out;
       }
       h4 {
         font-size: 25px;
@@ -98,27 +112,30 @@ export default {
     }
     p {
       color: #999;
-      margin: 20px 0;
+      margin: 15px 0;
       text-align: left;
       font-size: 18px;
     }
     .vote-stat {
-      margin-bottom: 20px;
+      margin-bottom: 15px;
       overflow: hidden;
       span {
         padding: 5px 15px;
         color: #fff;
         float: left;
         font-size: 20px;
-        &#like {
+        &.vote-like {
           background-color: #080;
           border-radius: 5px 0 0 5px;
           text-align: left;
         }
-        &#unlike {
+        &.vote-unlike {
           background-color: #f00;
           border-radius: 0 5px 5px 0;
           text-align: right;
+        }
+        svg {
+          margin-right: 10px;
         }
       }
     }
