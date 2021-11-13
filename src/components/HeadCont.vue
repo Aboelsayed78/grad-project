@@ -51,7 +51,7 @@ export default {
     border: 2px solid transparent;
     padding: 30px;
     transition: all 0.25s ease-in-out;
-    &:hover{
+    &:hover {
       border: 2px solid $main-color;
     }
     h2 {
@@ -88,7 +88,7 @@ export default {
     border: 2px solid transparent;
     padding: 20px;
     transition: all 0.25s ease-in-out;
-    &:hover{
+    &:hover {
       border: 2px solid $main-color;
     }
     span {
@@ -105,7 +105,7 @@ export default {
       width: 100%;
       font-size: 22px;
     }
-    svg{
+    svg {
       position: absolute;
       right: 40px;
       top: 135px;
@@ -123,16 +123,11 @@ export default {
       background-color: #ddd;
       border: 2px solid transparent;
       font-size: 22px;
-      text-transform: capitalize;
       transition: all 0.25s ease-in-out;
       &:focus {
-        outline: none;
         border: 2px solid $main-color;
         background-color: #fff;
       }
-    }
-    input[type="date"] {
-      text-transform: uppercase;
     }
     button {
       display: block;
@@ -149,7 +144,7 @@ export default {
       text-align: center;
     }
   }
-  svg{
+  svg {
     position: absolute;
     right: 48.5%;
     top: 90%;

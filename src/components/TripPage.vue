@@ -1,13 +1,13 @@
 <template>
-  <div id="vote-page" class="modal-vote-page">
-    <div class="modal-vote">
+  <div id="trip-page" class="modal-trip-page">
+    <div class="modal-trip">
       <span
-        onclick="document.getElementById('vote-page').style.display='none'"
+        onclick="document.getElementById('trip-page').style.display='none'"
         class="close"
         title="Close"
         >&times;
       </span>
-      <div class="vote-content">
+      <div class="trip-content">
         <div class="slider-contain">
           <div id="slider-num" class="slider-num"></div>
           <img src="../assets/header-1.jpg" alt="" />
@@ -35,24 +35,57 @@
             dolorem lorem ipsum dolor sit amet consectetur adipisicing elit. Ut dolorum
             amet commodi, ab dicta porro consectetur dignissimos nostrum quo
             magnam illum eius necessitatibus nemo modi quae eaque rerum veniam
-            dolorem lorem ipsum dolor sit amet consectetur adipisicing elit. Ut dolorum
-            amet commodi, ab dicta porro consectetur dignissimos nostrum quo
-            magnam illum eius necessitatibus nemo modi quae eaque rerum veniam
             dolorem.
           </p>
         </div>
         <div class="data-row">
-          <label>exp price</label>
-          <p>1250 - 1400 le</p>
+          <label for="">
+            transportation<font-awesome-icon icon="bus-alt" />
+          </label>
+          <p>flight</p>
         </div>
-        <div class="data-vote">
-          <button class="like">
-            <font-awesome-icon icon="thumbs-up" />like
-            <span>86</span>
+        <div class="data-row">
+          <label for="">
+            food<font-awesome-icon icon="utensils" />
+          </label>
+          <p>full meal</p>
+        </div>
+        <div class="data-row">
+          <label for="">
+            residence<font-awesome-icon icon="building" />
+          </label>
+          <p>hotel</p>
+        </div>
+        <div class="data-row">
+          <label for="">
+            nights<font-awesome-icon icon="clock" />
+          </label>
+          <p>4 nights</p>
+        </div>
+        <div class="data-row">
+          <label for="">
+            date<font-awesome-icon :icon="['far', 'calendar']" />
+          </label>
+          <p>Dec 15</p>
+        </div>
+        <div class="data-row">
+          <label for="">
+            price<font-awesome-icon icon="coins" />
+          </label>
+          <p>1200 le</p>
+        </div>
+        <div class="data-trip">
+          <button class="save">
+            <font-awesome-icon icon="heart" />
+            <span>save trip</span>
           </button>
-          <button class="unlike">
-            <font-awesome-icon icon="thumbs-down" />unlike
-            <span>23</span>
+          <button class="open">
+            <font-awesome-icon icon="external-link-alt" />
+            <span>book trip</span>
+          </button>
+          <button class="views">
+            <font-awesome-icon icon="eye" />
+            <span>150 views</span>
           </button>
         </div>
       </div>
@@ -62,7 +95,7 @@
 
 <script>
 export default {
-  name: "VotePage",
+  name: "TripPage",
   mounted: function () {
     // getting all the images of the slider
     let sliderImages = Array.from(
@@ -156,7 +189,7 @@ export default {
 
 <style lang="scss">
 @import "../assets/_reset.scss";
-.modal-vote-page {
+.modal-trip-page {
   display: none;
   position: fixed;
   z-index: 1;
@@ -166,10 +199,10 @@ export default {
   height: 100%;
   overflow: auto;
   background-color: #474e5dd9;
-  .modal-vote {
+  .modal-trip {
     background-color: #f8f8f8;
     margin: 2% auto;
-    width: 70%;
+    width: 80%;
     border: none;
     border-radius: 5px;
     position: relative;
@@ -186,12 +219,12 @@ export default {
         cursor: pointer;
       }
     }
-    .vote-content {
+    .trip-content {
       overflow: hidden;
       .slider-contain {
         margin: 25px auto;
         width: 80%;
-        height: 400px;
+        height: 500px;
         position: relative;
         border: 2px solid $main-color;
         border-radius: 5px;
@@ -301,15 +334,27 @@ export default {
           background-color: #eee;
           border-bottom: 1px solid $main-color;
           border-top: 1px solid $main-color;
+          label {
+            color: $main-color;
+          }
         }
         label,
         p {
           display: inline-block;
-          width: 15%;
-          margin-right: 15%;
+          width: 20%;
+          margin-right: 10%;
           font-size: 18px;
           text-transform: capitalize;
           text-align: left;
+          transition: all 0.25s ease-in-out;
+        }
+        label {
+          svg {
+            float: left;
+            margin-right: 15px;
+            margin-top: 4px;
+            width: 17px;
+          }
         }
         p {
           width: 70%;
@@ -346,7 +391,7 @@ export default {
           }
         }
       }
-      .data-vote {
+      .data-trip {
         text-align: center;
         margin: 10px 0;
         button {
@@ -359,25 +404,19 @@ export default {
           cursor: pointer;
           color: #fff;
           width: 175px;
-          &.like {
-            background-color: #080;
-            span {
-              background-color: #165a16;
-            }
-          }
-          &.unlike {
-            background-color: #f00;
-            span {
-              background-color: #b71010;
-            }
-          }
           svg {
             margin-right: 15px;
+            font-size: 20px;
           }
-          span {
-            margin-left: 15px;
-            border-radius: 5px;
-            padding: 3px;
+          &.save {
+            background-color: crimson;
+          }
+          &.open {
+            background-color: $main-color;
+          }
+          &.views {
+            background-color: $second-color;
+            cursor: auto;
           }
         }
       }

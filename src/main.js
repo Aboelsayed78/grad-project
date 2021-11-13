@@ -19,7 +19,19 @@ import {
   faThumbsDown,
   faMapMarkerAlt,
   faAngleDoubleDown,
+  faHeart,
+  faEye,
+  faCoins,
+  faBusAlt,
+  faBuilding,
+  faClock,
+  faUtensils,
+  faExternalLinkAlt,
+  faFilter,
 } from "@fortawesome/free-solid-svg-icons";
+import{
+  faCalendar,
+} from "@fortawesome/free-regular-svg-icons";
 import {
   faFacebookF,
   faFacebookMessenger,
@@ -45,6 +57,16 @@ library.add(
   faThumbsDown,
   faMapMarkerAlt,
   faAngleDoubleDown,
+  faHeart,
+  faEye,
+  faCoins,
+  faBusAlt,
+  faBuilding,
+  faClock,
+  faUtensils,
+  faExternalLinkAlt,
+  faCalendar,
+  faFilter,
 );
 
 Vue.component("font-awesome-icon", FontAwesomeIcon);

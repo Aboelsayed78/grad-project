@@ -67,7 +67,8 @@ export default {
             display: inline-block;
             width: 20%;
             padding: 6px 2.5px;
-            font-size: 18px;
+            font-size: 20px;
+            text-align: center;
             text-transform: capitalize;
             a {
               text-decoration: none;
@@ -84,9 +85,9 @@ export default {
         width: 13%;
         border-radius: 5px;
         color: #fff;
-        font-size: 18px;
+        font-size: 20px;
         text-transform: capitalize;
-        padding: 3px;
+        padding: 5px;
         cursor: pointer;
         text-align: center;
       }

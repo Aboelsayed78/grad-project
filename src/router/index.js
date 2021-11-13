@@ -46,7 +46,7 @@ const routes = [
     name: "Contact",
     component: Contact,
     meta: {
-      title: "Contact"
+      title: "Contact",
     },
   },
 ];
@@ -58,7 +58,7 @@ const router = new VueRouter({
 });
 
 router.beforeEach((to, from, next) => {
-  document.title = `Grad -> ${to.meta.title}`;
+  document.title = `Graduation -> ${to.meta.title}`;
   next();
 });
 

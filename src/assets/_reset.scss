@@ -24,6 +24,17 @@ ul {
   margin: 0 auto;
 }
 
+button,
+input,
+select {
+  outline: none;
+  text-transform: capitalize;
+}
+
+input[type="date"] {
+  text-transform: uppercase;
+}
+
 // /* Extra small devices (phones, 600px and down) */
 // @media only screen and (max-width: 600px) {...}
 

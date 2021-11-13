@@ -15,10 +15,10 @@
       </p>
       <div class="vote-stat">
         <span class="vote-like">
-          <font-awesome-icon icon="thumbs-up" />{{like}}
+          <font-awesome-icon icon="thumbs-up" />{{ like }}
         </span>
         <span class="vote-unlike">
-          <font-awesome-icon icon="thumbs-down" />{{unlike}}
+          <font-awesome-icon icon="thumbs-down" />{{ unlike }}
         </span>
       </div>
       <button
@@ -40,17 +40,17 @@ export default {
   },
   mounted: function voteWidth() {
     let voteArr = document.getElementsByClassName("vote-comp");
-    for(let i=0; i<=voteArr.length; i++){
+    for (let i = 0; i <= voteArr.length; i++) {
       let x = document.getElementsByClassName("vote-like")[i],
         y = document.getElementsByClassName("vote-unlike")[i],
         xInt = parseInt(x.innerText), // 50
         yInt = parseInt(y.innerText), // 25
         tot = xInt + yInt, // 75
-        xCon = ((xInt / tot) * 100), // 66.6666
-        yCon = ((yInt / tot) * 100); // 33.3333
+        xCon = (xInt / tot) * 100, // 66.6666
+        yCon = (yInt / tot) * 100; // 33.3333
       x.style.width = xCon + "%"; // 66.6%
       y.style.width = yCon + "%"; // 33.3%
-    }  
+    }
   },
 };
 </script>
@@ -61,7 +61,7 @@ export default {
   height: 250px;
   padding: 5px;
   margin-bottom: 75px;
-  background-color: #f5f5f5;
+  background-color: #f8f8f8;
   border-radius: 5px;
   transition: all 0.25s ease-in-out;
   box-shadow: 1px 1px 5px 0 #ccc;
@@ -106,8 +106,12 @@ export default {
         transition: all 0.25s ease-in-out;
       }
       h4 {
-        font-size: 25px;
+        font-size: 24px;
         text-align: right;
+        cursor: pointer;
+        &:hover {
+          color: $main-color;
+        }
       }
     }
     p {

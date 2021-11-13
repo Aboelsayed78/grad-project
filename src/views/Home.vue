@@ -26,7 +26,7 @@
     <div class="section">
       <div class="contain">
         <div class="sec-cont">
-          <h1><span>vote</span> for your trip</h1>
+          <h1><span>vote</span> for your favorite trip</h1>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam est
             in laborum dolorum adipisci accusantium debitis facere ipsum dolores
@@ -53,14 +53,14 @@
           <img src="../assets/header-3.jpg" alt="" />
         </div>
         <div class="sec-cont">
-          <h1><span>search</span> for your trip</h1>
+          <h1><span>pick</span> your trip among hundreds</h1>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam est
             in laborum dolorum adipisci accusantium debitis facere ipsum dolores
             quia corrupti minima vitae animi voluptatum incidunt, placeat totam.
             Maxime, laborum!
           </p>
-          <button><router-link to="/trips">find trip</router-link></button>
+          <button><router-link to="/trips">pick a trip</router-link></button>
         </div>
       </div>
       <div class="clear"></div>
@@ -74,7 +74,7 @@
     <div class="section">
       <div class="contain">
         <div class="sec-cont">
-          <h1><span>compare</span> between agencies</h1>
+          <h1><span>compare</span> between many agencies</h1>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam est
             in laborum dolorum adipisci accusantium debitis facere ipsum dolores
@@ -212,6 +212,7 @@ export default {
           text-transform: capitalize;
           padding: 8px 20px;
           cursor: pointer;
+          box-shadow: 2px 2px 5px 0 #ccc;
           a {
             text-decoration: none;
             color: #fff;
