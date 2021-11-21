@@ -126,6 +126,7 @@ export default {
           }
           &.active {
             color: $main-color;
+            padding-left: 20px;
             border-left: 3px solid $main-color;
             background-color: #eee;
           }
