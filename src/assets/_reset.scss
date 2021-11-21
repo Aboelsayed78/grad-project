@@ -26,13 +26,17 @@ ul {
 
 button,
 input,
-select {
+select,
+textarea {
   outline: none;
-  text-transform: capitalize;
 }
 
 input[type="date"] {
   text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
 }
 
 // /* Extra small devices (phones, 600px and down) */
@@ -58,23 +62,6 @@ input[type="date"] {
   left: 0;
   bottom: 0;
   background-color: rgba(58, 58, 58, 0.5);
-}
-
-/* sepration style */
-.seprator {
-  position: relative;
-  text-align: center;
-  hr {
-    height: 4px;
-    color: #999;
-    margin: 75px 100px;
-  }
-  img {
-    width: 30px;
-    top: -13px;
-    background-color: #fff;
-    position: absolute;
-  }
 }
 
 /* scroll bar style */

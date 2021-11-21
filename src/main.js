@@ -28,6 +28,15 @@ import {
   faUtensils,
   faExternalLinkAlt,
   faFilter,
+  faStar,
+  faShip,
+  faTree,
+  faUmbrellaBeach,
+  faBriefcaseMedical,
+  faQuran,
+  faArchway,
+  faTags,
+  faPlus,
 } from "@fortawesome/free-solid-svg-icons";
 import{
   faCalendar,
@@ -40,6 +49,7 @@ import {
   faInstagram,
   faYoutube,
   faGooglePlay,
+  faTelegramPlane,
 } from "@fortawesome/free-brands-svg-icons";
 
 library.add(
@@ -67,6 +77,16 @@ library.add(
   faExternalLinkAlt,
   faCalendar,
   faFilter,
+  faStar,
+  faShip,
+  faTree,
+  faUmbrellaBeach,
+  faBriefcaseMedical,
+  faQuran,
+  faArchway,
+  faTags,
+  faPlus,
+  faTelegramPlane,
 );
 
 Vue.component("font-awesome-icon", FontAwesomeIcon);

@@ -32,10 +32,10 @@
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut dolorum
             amet commodi, ab dicta porro consectetur dignissimos nostrum quo
             magnam illum eius necessitatibus nemo modi quae eaque rerum veniam
-            dolorem lorem ipsum dolor sit amet consectetur adipisicing elit. Ut dolorum
-            amet commodi, ab dicta porro consectetur dignissimos nostrum quo
-            magnam illum eius necessitatibus nemo modi quae eaque rerum veniam
-            dolorem.
+            dolorem lorem ipsum dolor sit amet consectetur adipisicing elit. Ut
+            dolorum amet commodi, ab dicta porro consectetur dignissimos nostrum
+            quo magnam illum eius necessitatibus nemo modi quae eaque rerum
+            veniam dolorem.
           </p>
         </div>
         <div class="data-row">
@@ -45,21 +45,15 @@
           <p>flight</p>
         </div>
         <div class="data-row">
-          <label for="">
-            food<font-awesome-icon icon="utensils" />
-          </label>
+          <label for=""> food<font-awesome-icon icon="utensils" /> </label>
           <p>full meal</p>
         </div>
         <div class="data-row">
-          <label for="">
-            residence<font-awesome-icon icon="building" />
-          </label>
+          <label for=""> residence<font-awesome-icon icon="building" /> </label>
           <p>hotel</p>
         </div>
         <div class="data-row">
-          <label for="">
-            nights<font-awesome-icon icon="clock" />
-          </label>
+          <label for=""> nights<font-awesome-icon icon="clock" /> </label>
           <p>4 nights</p>
         </div>
         <div class="data-row">
@@ -69,10 +63,14 @@
           <p>Dec 15</p>
         </div>
         <div class="data-row">
-          <label for="">
-            price<font-awesome-icon icon="coins" />
-          </label>
+          <label for=""> price<font-awesome-icon icon="coins" /> </label>
           <p>1200 le</p>
+        </div>
+        <div class="data-row">
+          <label for=""> tags<font-awesome-icon icon="tags" /> </label>
+          <span class="tag">beach</span>
+          <span class="tag">honey moon</span>
+          <span class="tag">safari</span>
         </div>
         <div class="data-trip">
           <button class="save">
@@ -81,7 +79,7 @@
           </button>
           <button class="open">
             <font-awesome-icon icon="external-link-alt" />
-            <span>book trip</span>
+            <span>open trip</span>
           </button>
           <button class="views">
             <font-awesome-icon icon="eye" />
@@ -359,6 +357,18 @@ export default {
         p {
           width: 70%;
           margin: 0;
+        }
+        span.tag {
+          text-transform: capitalize;
+          padding: 3px 8px;
+          border: 1px solid $main-color;
+          border-radius: 5px;
+          margin-right: 5px;
+          transition: all 0.25s ease-in-out;
+          &:hover {
+            color: #fff;
+            background-color: $main-color;
+          }
         }
       }
       .descripe-row {

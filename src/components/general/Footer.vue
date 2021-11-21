@@ -55,8 +55,11 @@ export default {
           text-transform: capitalize;
           font-size: 20px;
           a {
-            text-decoration: none;
             color: $main-color;
+            transition: all 0.25s ease-in-out;
+            &:hover{
+              color: #fff;
+            }
           }
         }
       }

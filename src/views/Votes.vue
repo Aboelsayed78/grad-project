@@ -23,6 +23,6 @@ export default {
 <style lang="scss" scoped>
 @import "../assets/_reset.scss";
 .votes {
-  padding: 25px 0;
+  margin-top: 50px;
 }
 </style>

@@ -7,14 +7,30 @@
       <div class="nav-tabs">
         <div class="web-tabs">
           <ul>
-            <li><router-link to="/">home</router-link></li>
-            <li><router-link to="/votes">votes</router-link></li>
-            <li><router-link to="/trips">trips</router-link></li>
-            <li><router-link to="/agencies">agencies</router-link></li>
-            <li><router-link to="/contact">contact</router-link></li>
+            <li>
+              <router-link to="/">home</router-link>
+            </li>
+            <li>
+              <router-link to="/votes">votes</router-link>
+            </li>
+            <li>
+              <router-link to="/trips">trips</router-link>
+            </li>
+            <li>
+              <router-link to="/agencies">agencies</router-link>
+            </li>
+            <li>
+              <router-link to="/contact">contact</router-link>
+            </li>
           </ul>
         </div>
-        <div class="login-tab">login</div>
+        <div class="login-tab">
+          <button
+            onclick="document.getElementById('forms').style.display='block'"
+          >
+            login
+          </button>
+        </div>
       </div>
       <div class="clear"></div>
     </div>
@@ -39,7 +55,7 @@ export default {
   z-index: 1;
   border: 2px solid transparent;
   transition: all 0.25s ease-in-out;
-  &:hover{
+  &:hover {
     border: 2px solid $main-color;
   }
   .contain {
@@ -71,7 +87,6 @@ export default {
             text-align: center;
             text-transform: capitalize;
             a {
-              text-decoration: none;
               color: #eee;
               &.router-link-exact-active {
                 color: $main-color;
@@ -81,15 +96,19 @@ export default {
         }
       }
       .login-tab {
-        background-color: $main-color;
         width: 13%;
-        border-radius: 5px;
-        color: #fff;
-        font-size: 20px;
-        text-transform: capitalize;
-        padding: 5px;
-        cursor: pointer;
-        text-align: center;
+        button {
+          background-color: $main-color;
+          border-radius: 5px;
+          border: none;
+          width: 100%;
+          text-transform: capitalize;
+          padding: 8px;
+          cursor: pointer;
+          text-align: center;
+          color: #fff;
+          font-size: 20px;
+        }
       }
     }
   }

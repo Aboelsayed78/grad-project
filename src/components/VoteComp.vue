@@ -59,8 +59,8 @@ export default {
 @import "../assets/_reset.scss";
 .vote-comp {
   height: 250px;
-  padding: 5px;
-  margin-bottom: 75px;
+  padding: 2px;
+  margin-bottom: 50px;
   background-color: #f8f8f8;
   border-radius: 5px;
   transition: all 0.25s ease-in-out;

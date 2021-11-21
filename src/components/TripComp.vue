@@ -65,7 +65,7 @@ export default {
 @import "../assets/_reset.scss";
 .trip-comp {
   height: 225px;
-  padding: 3px;
+  padding: 2px;
   margin-bottom: 50px;
   background-color: #f8f8f8;
   border-radius: 5px;

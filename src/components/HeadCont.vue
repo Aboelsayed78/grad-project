@@ -1,5 +1,5 @@
 <template>
-  <div class="head-cont">
+  <div id="head-cont" class="head-cont">
     <div class="contain">
       <div class="content">
         <h2>{{ msg }}</h2>

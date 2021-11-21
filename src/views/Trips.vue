@@ -17,20 +17,16 @@
             <option value="">sea</option>
             <option value="">bus</option>
           </select>
-          
-          <label for="">
-            food<font-awesome-icon icon="utensils" />
-          </label>
+
+          <label for=""> food<font-awesome-icon icon="utensils" /> </label>
           <select name="" id="">
             <option value="">any</option>
             <option value="">full</option>
             <option value="">half</option>
             <option value="">none</option>
           </select>
-          
-          <label for="">
-            residence<font-awesome-icon icon="building" />
-          </label>
+
+          <label for=""> residence<font-awesome-icon icon="building" /> </label>
           <select name="" id="">
             <option value="">any</option>
             <option value="">hotel</option>
@@ -38,14 +34,10 @@
             <option value="">shaleh</option>
           </select>
 
-          <label for="">
-            nights<font-awesome-icon icon="clock" />
-          </label>
+          <label for=""> nights<font-awesome-icon icon="clock" /> </label>
           <input type="number" name="" id="" placeholder="nights" />
 
-          <label for="">
-            price<font-awesome-icon icon="coins" />
-          </label>
+          <label for=""> price<font-awesome-icon icon="coins" /> </label>
           <input type="number" name="" id="min" placeholder="min" />
           <input type="number" name="" id="max" placeholder="max" />
 
@@ -54,9 +46,17 @@
           </label>
           <input type="date" name="" id="" />
 
-          <button>
-            filter<font-awesome-icon icon="filter" />
-          </button>
+          <label for=""> Tags<font-awesome-icon icon="tags" /></label>
+          <div class="tags-cont">
+            <span class="tag">cruise</span>
+            <span class="tag">treasures</span>
+            <span class="tag">honey moon</span>
+            <span class="tag">religion</span>
+            <span class="tag">safari</span>
+            <span class="tag">beach</span>
+            <span class="tag">medical</span>
+          </div>
+          <button>filter<font-awesome-icon icon="filter" /></button>
         </form>
       </div>
       <div class="trips-cont">
@@ -86,6 +86,7 @@ export default {
 <style lang="scss" scoped>
 @import "../assets/_reset.scss";
 .trips {
+  margin-top: 50px;
   .filter {
     float: left;
     width: 18%;
@@ -131,12 +132,31 @@ export default {
         &:focus {
           border: 2px solid $main-color;
         }
-        &#min{
+        &#min {
           margin-bottom: 5px;
         }
       }
       input[type="date"]::-webkit-calendar-picker-indicator {
-          display: none;
+        display: none;
+      }
+      .tags-cont {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 15px;
+        .tag {
+          text-transform: capitalize;
+          padding: 0 6px;
+          border: 2px solid $main-color;
+          border-radius: 5px;
+          margin: 2px 5px;
+          font-size: 18px;
+          transition: all 0.25s ease-in-out;
+          cursor: pointer;
+          &:hover {
+            color: #fff;
+            background-color: $main-color;
+          }
+        }
       }
       button {
         position: relative;
@@ -146,6 +166,7 @@ export default {
         color: #fff;
         cursor: pointer;
         text-align: left;
+        text-transform: capitalize;
         padding: 5px 15px;
         box-shadow: 2px 2px 5px 0 #ccc;
         svg {
