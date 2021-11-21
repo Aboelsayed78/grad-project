@@ -112,10 +112,9 @@ export default {
         padding: 0;
         margin: 0;
         li {
-          text-align: center;
           border-bottom: 1px solid #46617c;
           display: block;
-          padding: 10px 0;
+          padding: 10px;
           font-size: 22px;
           text-transform: capitalize;
           color: #fff;
