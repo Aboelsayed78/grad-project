@@ -27,5 +27,6 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: $second-color;
+  // background-color: #f5f5f5;
 }
 </style>

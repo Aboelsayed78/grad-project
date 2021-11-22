@@ -1,5 +1,5 @@
 <template>
-  <div class="navbar">
+  <div id="navbar" class="navbar">
     <div class="contain">
       <div class="logo">
         <img alt="Vue logo" src="../../assets/logo.png" />
@@ -40,13 +40,23 @@
 <script>
 export default {
   name: "Navbar",
+  mounted: function () {
+    window.onscroll = function() {scrollFunction()};
+    function scrollFunction() {
+      if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+        document.getElementById("navbar").classList.add("trans");
+      } else {
+        document.getElementById("navbar").classList.remove("trans");
+      }
+    }
+  }
 };
 </script>
 
 <style lang="scss" scoped>
 @import "../../assets/_reset.scss";
 .navbar {
-  position: absolute;
+  position: fixed;
   padding: 5px 35px;
   margin: 15px 2.5%;
   width: 95%;
@@ -57,6 +67,25 @@ export default {
   transition: all 0.25s ease-in-out;
   &:hover {
     border: 2px solid $main-color;
+  }
+  &.trans {
+    background-color: $second-color;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    border-radius: 0;
+    .contain {
+      .nav-tabs {
+        .login-tab {
+          button {
+            padding: 5px;
+          }
+        }
+      }
+    }
+    &:hover{
+      border: 2px solid transparent;
+    }
   }
   .contain {
     .logo {

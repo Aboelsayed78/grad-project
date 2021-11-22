@@ -67,7 +67,7 @@ export default {
   height: 225px;
   padding: 2px;
   margin-bottom: 50px;
-  background-color: #f8f8f8;
+  background-color: #f5f5f5;
   border-radius: 5px;
   transition: all 0.25s ease-in-out;
   box-shadow: 1px 1px 5px 0 #ccc;
