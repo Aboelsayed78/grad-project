@@ -151,7 +151,7 @@ export default {
     .agen-content {
       overflow: hidden;
       border-radius: 5px;
-      height: 583px;
+      height: 90vh;
       .side-panel {
         float: left;
         width: 25%;
